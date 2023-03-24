@@ -1,0 +1,41 @@
+.main-card {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  opacity: 1;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-card .bookname {
+  border-right: 1px;
+  border-color: black;
+}
+
+.main-card .bookName h3 {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main-card .bookName p {
+  margin: 0px 10px 10px 10px;
+  font-size: 12px;
+}
+
+.main-card .bookName b {
+  color: red;
+}
+
+.main-card .downloadlink {
+}
+
+.main-card .downloadlink img {
+  margin: 10px;
+  width: 40px;
+}
