@@ -39,3 +39,40 @@
   margin: 10px;
   width: 40px;
 }
+
+@media (max-width: 800px) {
+  .main-card {
+    margin: 10px 0px;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    opacity: 1;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .main-card .bookname {
+    border-right: 1px;
+    border-color: black;
+  }
+
+  .main-card .bookName h3 {
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .main-card .bookName p {
+    margin: 0px 10px 10px 10px;
+    font-size: 9px;
+  }
+
+  .main-card .downloadlink img {
+    margin: 10px;
+    width: 30px;
+  }
+}

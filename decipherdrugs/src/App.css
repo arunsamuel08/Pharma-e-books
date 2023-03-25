@@ -37,19 +37,19 @@
 .left-div .text-container {
   position: absolute;
   top: 42%;
-  left: 10%;
+  margin: 0 100px;
 }
 
 .text-container .main-heading {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 90px;
+  font-size: 86px;
 }
 
 .text-container .sub-heading {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   margin: 0 5px;
 }
 
@@ -156,11 +156,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 85%;
 }
 
 .right-div .books {
   width: 85%;
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,4 +195,151 @@
 
 .search-bar img {
   width: 30px;
+}
+
+/* Mobile View */
+/* =================================================== */
+
+@media (max-width: 1200px) {
+  .left-div .text-container {
+    position: absolute;
+    top: 42%;
+    margin: 0px 50px;
+  }
+
+  .text-container .main-heading {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 75px;
+  }
+
+  .text-container .sub-heading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 1051px) {
+  .left-div .text-container {
+    position: absolute;
+    top: 42%;
+  }
+
+  .text-container .main-heading {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 65px;
+  }
+
+  .text-container .sub-heading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .App .left-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .left-div .text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    margin: 0;
+  }
+
+  .text-container .main-heading {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+  }
+
+  .text-container .sub-heading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+
+  .text-container .bn54 {
+    display: none;
+  }
+
+  .App .right-div {
+    display: none;
+  }
+
+  .left-div .book-container {
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-div .books {
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fefcf3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow-y: scroll;
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .left-div .search-bar {
+    padding: 0px 10px;
+    position: relative;
+    width: 85%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    background-color: white;
+  }
+
+  .left-div .search-bar .input-box {
+    width: 100%;
+    height: 5px;
+    padding: 25px;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+
+  .leftdiv .search-bar .imgsearch {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ecf2ff;
+    border-radius: 6px;
+    height: 100px;
+  }
 }
