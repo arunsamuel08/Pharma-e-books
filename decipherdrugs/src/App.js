@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import BookCard from "./components/book-card/book-card";
-import Data from "./csvjson.json";
+import Notes from "./components/notes/notes";
+import BookNav from "./components/book/books";
 
 function App() {
   const [isMobile, setisMobile] = useState(false);
@@ -15,16 +15,6 @@ function App() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const [searchTerm, setsearchTerm] = useState("");
-  let filteredData = Data;
-  if (searchTerm) {
-    filteredData = filteredData.filter(i =>
-      i["Name of the Book"].toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  } else if (searchTerm === "") {
-    filteredData = Data;
-  }
 
   return (
     <div className="App">
@@ -40,32 +30,7 @@ function App() {
               <span className="bn54span">About Us</span>
             </button>
           </a>
-          {isMobile && (
-            <div className="book-container">
-              <div className="search-bar">
-                <input
-                  className="input-box"
-                  type="text"
-                  placeholder="Search..."
-                  onChange={e => setsearchTerm(e.target.value)}
-                ></input>
-                <img
-                  clasname="imgsearch"
-                  src="./images/search.png"
-                  alt="search"
-                />
-              </div>
-              <div id="books" className="books">
-                {filteredData.map(item => (
-                  <BookCard
-                    bookname={item["Name of the Book"]}
-                    link={item["Link"]}
-                    subject={item["Subject"]}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
+          {isMobile && <BookNav />}
         </div>
       </div>
       <div className="right-div">
@@ -75,26 +40,8 @@ function App() {
             <a href="#books">NOTES</a>
           </div>
         </nav>
-        <div className="book-container">
-          <div className="search-bar">
-            <input
-              className="input-box"
-              type="text"
-              placeholder="Search..."
-              onChange={e => setsearchTerm(e.target.value)}
-            ></input>
-            <img src="./images/search.png" alt="search" />
-          </div>
-          <div id="books" className="books">
-            {filteredData.map(item => (
-              <BookCard
-                bookname={item["Name of the Book"]}
-                link={item["Link"]}
-                subject={item["Subject"]}
-              />
-            ))}
-          </div>
-        </div>
+        <BookNav />
+        {/* <Notes /> */}
       </div>
     </div>
   );
