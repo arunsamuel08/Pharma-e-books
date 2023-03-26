@@ -16,6 +16,12 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const [activeNav, setactiveNav] = useState("books");
+
+  const handleNavClick = nav => {
+    setactiveNav(nav);
+  };
+
   return (
     <div className="App">
       <div className="left-div">
@@ -31,17 +37,49 @@ function App() {
             </button>
           </a>
           {isMobile && <BookNav />}
+          {isMobile && (
+            <nav>
+              <div className="nav-group">
+                <a
+                  href="#b"
+                  className={activeNav === "books" ? "active" : ""}
+                  onClick={() => handleNavClick("books")}
+                >
+                  BOOKS
+                </a>
+                <a
+                  href="#n"
+                  className={activeNav === "notes" ? "active" : ""}
+                  onClick={() => handleNavClick("notes")}
+                >
+                  NOTES
+                </a>
+              </div>
+            </nav>
+          )}
         </div>
       </div>
       <div className="right-div">
         <nav>
           <div className="nav-group">
-            <a href="#books">BOOKS</a>
-            <a href="#books">NOTES</a>
+            <a
+              href="#b"
+              className={activeNav === "books" ? "active" : ""}
+              onClick={() => handleNavClick("books")}
+            >
+              BOOKS
+            </a>
+            <a
+              href="#n"
+              className={activeNav === "notes" ? "active" : ""}
+              onClick={() => handleNavClick("notes")}
+            >
+              NOTES
+            </a>
           </div>
         </nav>
-        <BookNav />
-        {/* <Notes /> */}
+        {activeNav === "books" ? <BookNav /> : null}
+        {activeNav === "notes" ? <Notes /> : null}
       </div>
     </div>
   );
