@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  background-color: #8fbdd3;
+  animation: slide-down 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.modalCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.about {
+  width: 50%;
+}
+
+.about h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 80px;
+}
+
+.about p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: white;
+  width: 70%;
+  font-size: 20px;
+}
+
+.imagediv img {
+  width: 320px;
+  height: 370px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 50px;
+}
+
+.links {
+  color: white;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.links a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.links a:hover::after {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.closebtn button {
+  position: absolute;
+  outline: none;
+  background: none;
+  bottom: 5%;
+  background-color: #8fbdd3;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.closebtn img {
+  width: 20px;
+  margin: 5px;
+}
