@@ -47,3 +47,9 @@
 
 /* Mobile View */
 /* =================================================== */
+
+@media (max-width: 800px) {
+  .right-div .book-container {
+    height: 60%;
+  }
+}

@@ -4,7 +4,7 @@
   align-items: center;
   width: 85%;
   background-color: white;
-  margin-top: 20px;
+  margin: 20px 0px;
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -12,6 +12,7 @@
 
 .notesname h3 {
   font-family: "Montserrat", sans-serif;
+  margin: 10px;
 }
 
 img {
@@ -19,17 +20,18 @@ img {
 }
 
 @media (max-width: 800px) {
-  .notecard {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+  .right-div .notecard {
+    width: 82%;
+    margin: 10px 0;
   }
+
   .notesname h3 {
     font-family: "Montserrat", sans-serif;
+    margin: 10px;
     font-size: 12px;
   }
 
-  .left-div .downloadlink2 img {
-    width: 30px;
+  img {
+    width: 20px;
   }
 }

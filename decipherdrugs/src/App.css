@@ -199,94 +199,67 @@
 
 @media (max-width: 800px) {
   .App .left-div {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .left-div .text-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 5%;
-    margin: 0;
-  }
-
-  .text-container .main-heading {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-  }
-
-  .text-container .sub-heading {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    margin: 0 5px;
-  }
-
-  .text-container .bn54 {
     display: none;
   }
 
   .App .right-div {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
   }
 
-  .left-div .book-container {
-    margin: 50px 0px;
-    width: 100%;
+  .right-div .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
 
-  .left-div .books {
-    width: 90%;
-    height: 55vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fefcf3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    overflow-y: scroll;
-    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.5);
+  .right-div .main-heading {
+    font-size: 40px;
   }
 
-  .left-div .search-bar {
-    padding: 0px 10px;
+  .right-div .sub-heading {
+    font-size: 10px;
+  }
+
+  .right-div .nav-group {
+    margin: 0;
+  }
+
+  .right-div .nav-group a {
+    margin: 30px 50px 10px 50px;
+  }
+
+  .right-div button {
     position: relative;
-    width: 85%;
-    margin: 20px;
+    outline: none;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: 20px 5px;
+    text-decoration: none;
   }
 
-  .left-div .search-bar .input-box {
-    width: 100%;
-    height: 5px;
-    padding: 25px;
-    border-radius: 40px;
+  .bn54 .bn54span {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    border: none;
-    outline: none;
-  }
-
-  .leftdiv .search-bar .imgsearch {
-    width: 20px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
   }
 
   ::-webkit-scrollbar-track {

@@ -43,11 +43,17 @@ function App() {
           <button className="bn54" onClick={handleModalToggle}>
             <span className="bn54span">About Me</span>
           </button>
-
-          {isMobile && <BookNav />}
         </div>
       </div>
       <div className="right-div">
+        {isMobile && (
+          <div className="text-container">
+            <div className="main-heading">Decipher Drugs</div>
+            <div className="sub-heading">
+              Need pharmacy books, notes? We gotchu!
+            </div>
+          </div>
+        )}
         <nav>
           <div className="nav-group">
             <a
@@ -68,6 +74,11 @@ function App() {
         </nav>
         {activeNav === "books" ? <BookNav /> : null}
         {activeNav === "notes" ? <Notes /> : null}
+        {isMobile && (
+          <button className="bn54" onClick={handleModalToggle}>
+            <span className="bn54span">About Me</span>
+          </button>
+        )}
       </div>
     </div>
   );
