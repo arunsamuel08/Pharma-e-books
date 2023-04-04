@@ -71,12 +71,13 @@
 .links {
   color: white;
   width: 70%;
-  margin-top: 30px;
+  display: inline-block;
+  height: 100px;
 }
 
 .links ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
 }
 
@@ -84,22 +85,18 @@
   position: relative;
   text-decoration: none;
   color: white;
+  display: inline-block;
+  width: 50px;
 }
 
-.links a:after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  height: 2px;
-  width: 0;
-  left: 0;
-  bottom: -2px;
-  transition: 0.3s;
+.links a img {
+  width: 30px;
+  transition: 0.5s;
 }
 
-.links a:hover::after {
-  width: 100%;
-  padding: 0px 0px;
+.links a img:hover {
+  width: 35px;
+  transition: 0.5s;
 }
 
 .closebtn button {
@@ -109,13 +106,12 @@
   bottom: 5%;
   background-color: #8fbdd3;
   border: none;
-  padding: 5px;
+  padding: 0;
   cursor: pointer;
 }
 
 .closebtn img {
   width: 20px;
-  margin: 5px;
 }
 
 @media (max-width: 800px) {
@@ -155,5 +151,11 @@
     color: white;
     width: 70%;
     font-size: 12px;
+  }
+
+  .closebtn button {
+    position: absolute;
+    left: 48%;
+    bottom: 3%;
   }
 }

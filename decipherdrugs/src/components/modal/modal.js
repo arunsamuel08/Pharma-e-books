@@ -19,10 +19,17 @@ const Modal = props => {
           </p>
           <div className="links">
             <ul>
-              <a href="https://arunsamuel08.vercel.app/">Profile</a>
-              <a href="https://github.com/arunsamuel08">Github</a>
-              <a href="https://www.linkedin.com/in/arunsamuel08/">LinkedIn</a>
-              <a href="https://www.instagram.com/arun.samuel08/">Instagram</a>
+              <a href="https://arunsamuel08.vercel.app/">
+                <img src="././images/profile-user.png" alt="profile" />
+              </a>
+              <a href="https://github.com/arunsamuel08">
+                {" "}
+                <img src="././images/github.png" alt="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/arunsamuel08/">
+                {" "}
+                <img src="././images/linkedin.png" alt="linkedin" />
+              </a>
             </ul>
           </div>
         </div>
