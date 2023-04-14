@@ -35,13 +35,13 @@ function App() {
       <div className="left-div">
         <img src="./images/books.jpg" alt="bgimage"></img>
         <div className="text-container">
-          <div className="main-heading">Decipher Drugs</div>
+          <div className="main-heading">Pharma E-Books</div>
           <div className="sub-heading">
             Need pharmacy books, notes? We gotchu!
           </div>
 
           <button className="bn54" onClick={handleModalToggle}>
-            <span className="bn54span">About Me</span>
+            <span className="bn54span">Report</span>
           </button>
         </div>
       </div>
