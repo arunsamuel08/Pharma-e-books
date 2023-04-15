@@ -52,4 +52,9 @@
   .right-div .book-container {
     height: 60%;
   }
+
+  .search-bar img {
+    width: 30px;
+    padding: 0px 10px;
+  }
 }

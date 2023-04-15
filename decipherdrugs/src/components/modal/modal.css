@@ -16,7 +16,7 @@
 }
 
 .modal {
-  width: 50%;
+  width: 20%;
   max-width: 600px;
   background-color: #fff;
   padding: 16px;
@@ -30,25 +30,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 5px 10px;
 }
-.main-header h3 {
-  color: red;
+.main-header h2 {
+  font-size: 30px;
+  margin: 0;
+  color: #9e0031;
 }
 .main-header button {
   background: none;
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 }
 
 .main-header button img {
   width: 20px;
+  height: 20px;
   transition: 0.1s;
 }
 
 .main-header button img:hover {
   width: 22px;
+  height: 22px;
   transition: 0.1s;
 }
 
@@ -67,5 +75,114 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content p {
+  width: 85%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.right-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.right-cont form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.right-cont input {
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: 1px solid #6d6a75;
+  width: 75%;
+  height: 5px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.right-cont textarea {
+  margin: 10px 0px;
+  border-radius: 20px;
+  height: 80px;
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 15px;
+  resize: none;
+}
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (max-width: 800px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+
+  .modal {
+    width: 70%;
   }
 }

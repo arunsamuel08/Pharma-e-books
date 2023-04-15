@@ -48,7 +48,7 @@ function App() {
       <div className="right-div">
         {isMobile && (
           <div className="text-container">
-            <div className="main-heading">Decipher Drugs</div>
+            <div className="main-heading">Pharma E-Books</div>
             <div className="sub-heading">
               Need pharmacy books, notes? We gotchu!
             </div>
@@ -76,7 +76,7 @@ function App() {
         {activeNav === "notes" ? <Notes /> : null}
         {isMobile && (
           <button className="bn54" onClick={handleModalToggle}>
-            <span className="bn54span">About Me</span>
+            <span className="bn54span">Report</span>
           </button>
         )}
       </div>
