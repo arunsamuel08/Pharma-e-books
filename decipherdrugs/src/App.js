@@ -29,6 +29,8 @@ function App() {
     setIsModalOpen(!isModalOpen); // toggle the state of the modal
   };
 
+  
+
   return (
     <div className="App">
       {isModalOpen && <Modal onclose={handleModalToggle} />}
