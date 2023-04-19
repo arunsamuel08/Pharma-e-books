@@ -16,11 +16,18 @@
   background-color: #fdf0e0;
   border-radius: 10px;
 }
+.main-app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
 
 .App {
   position: relative;
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
 .App .left-div {
@@ -42,7 +49,7 @@
 }
 
 .text-container .main-heading {
-  color: white;
+  color: #d1e7e0;
   font-family: "Playfair Display", serif;
   font-size: 86px;
 }
@@ -153,6 +160,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.right-div .nav-group a:hover {
+  color: #d1e7e0;
+}
+
 #notification-banner {
   background-color: #007bff;
   color: #fff;
@@ -180,7 +191,7 @@
   }
 
   .text-container .main-heading {
-    color: white;
+    color: #d1e7e0;
     font-family: "Playfair Display", serif;
     font-size: 75px;
   }
@@ -200,7 +211,7 @@
   }
 
   .text-container .main-heading {
-    color: white;
+    color: #d1e7e0;
     font-family: "Playfair Display", serif;
     font-size: 65px;
   }
@@ -214,6 +225,10 @@
 }
 
 @media (max-width: 800px) {
+  .main-app {
+    display: flex;
+    justify-content: flex-start;
+  }
   .App .left-div {
     display: none;
   }
@@ -221,9 +236,9 @@
   .App .right-div {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    height: 100vh;
     width: 100%;
     overflow: auto;
   }
@@ -233,10 +248,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
   .right-div .main-heading {
+    color: #d1e7e0;
     font-size: 40px;
   }
 

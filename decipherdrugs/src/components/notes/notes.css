@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 800px) {
- .right-div .notesContainer {
+  .right-div .notesContainer {
     height: 60%;
     width: 85%;
     display: flex;
