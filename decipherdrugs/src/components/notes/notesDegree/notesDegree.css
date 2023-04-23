@@ -40,3 +40,36 @@
   width: 45px;
   transition: 0.2s;
 }
+
+@media (max-width: 800px) {
+  .degree-cont {
+    padding: 10px 15px;
+  }
+
+  .degreeinfo h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .degreeinfo p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .taketobutton button {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .taketobutton button img {
+    width: 30px;
+    transition: 0.2s;
+  }
+
+  .taketobutton button img:hover {
+    width: 35px;
+    transition: 0.2s;
+  }
+}
