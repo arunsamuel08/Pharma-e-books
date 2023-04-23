@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Notes from "./components/notes/notes";
+import Notes from "./components/notes/notesMain/notes";
 import BookNav from "./components/book/books";
 import Modal from "./components/modal/modal";
 import Footer from "./components/footer/footer";
