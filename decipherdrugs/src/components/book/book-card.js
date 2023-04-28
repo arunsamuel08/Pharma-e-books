@@ -20,17 +20,17 @@ const BookCard = props => {
         <p>
           <b>Subject: </b>
           {props.subject}{" "}
-          {showNotification && (
-            <div className="notification-banner">
-              Your download is starting...
-            </div>
-          )}
         </p>
+        {showNotification && (
+          <div className="notification-banner">
+            Your download is starting...
+          </div>
+        )}
       </div>
       <div className="downloadlink">
         <a
           href={props.link}
-          setShowNotification={setShowNotification}
+          // setShowNotification={setShowNotification}
           onClick={handleDownloadClick}
         >
           <img src="./images/download2.png" alt="download"></img>

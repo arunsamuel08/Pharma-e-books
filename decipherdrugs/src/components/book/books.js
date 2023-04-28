@@ -32,6 +32,7 @@ const BookNav = () => {
             bookname={item["Name of the Book"]}
             link={item["Link"]}
             subject={item["Subject"]}
+            key={item["ID"]}
           />
         ))}
       </div>

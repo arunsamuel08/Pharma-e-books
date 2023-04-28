@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import "./notes.css";
 import NotesDegree from "../notesDegree/notesDegree";
 import BpharmNotes from "../bpharmNotes/bpharmNotes";
+import BackButton from "../backButton/backButton";
 
 const Notes = () => {
   const [showDegree, setshowDegree] = useState(true);
 
   const handleToggle1 = () => {
     setshowDegree(!showDegree);
+  };
+
+  const handleback = () => {
+    setshowDegree(true);
   };
 
   return (
@@ -26,6 +31,7 @@ const Notes = () => {
         </div>
       ) : (
         <div className="semesterContainer">
+          <BackButton backclick={handleback} />
           <BpharmNotes />
         </div>
       )}

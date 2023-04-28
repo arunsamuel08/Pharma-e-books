@@ -50,7 +50,7 @@
 .text-container .main-heading {
   color: #d1e7e0;
   font-family: "Poppins", sans-serif;
-  font-size: 82px;
+  font-size: 80px;
 }
 
 .text-container .sub-heading {
@@ -274,7 +274,7 @@
     margin: 10px 50px 10px 50px;
   }
 
-  .right-div button {
+  .right-div .bn54 {
     position: relative;
     outline: none;
     border-radius: 50px;
